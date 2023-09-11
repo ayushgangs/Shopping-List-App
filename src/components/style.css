@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(5, 5, 48);
+}
+
+.parent{
+    /* background-color: red; */
+    height: 100vh;
+    width: 25vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parent>*{
+    margin-top: 20px;
+}
+
+.parent>i{
+    color: rgb(82, 224, 243);
+    font-size: 60px;
+}
+
+p{
+    font-size: 25px; 
+    text-transform: capitalize;
+    color: white;
+}
+
+.addItem{
+    background-color: rgb(255, 255, 255);
+    height: 5%;
+    width: 85%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.addItem span{
+    /* background-color: orangered; */
+    font-size: 25px;
+    width: 7%;
+    margin-bottom: 9px;
+    margin-right: 5px;
+}
+
+.addItem input{
+    /* background-color: yellow; */
+    height: 100%;
+    width: 80%;
+    font-size: 25px;
+    border-style: none;
+    outline-style: none;
+    margin-right: 10px;
+}
+
+.addItem>i{
+    /* background-color: purple; */
+    font-size: 20px;
+}
+
+.addItem>i:hover{
+    color: rgb(145, 218, 35);
+}
+
+.toggleEdit{
+    color: rgb(145, 218, 35);
+}
+
+.item{
+    background-color: rgb(119, 53, 226);
+    height: 5%;
+    width: 85%;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.item:hover{
+    background-color: white;
+    color: rgb(119, 53, 226);
+}
+
+.item:hover .edit{
+    color: rgb(145, 218, 35);
+}
+
+.item:hover .delete{
+    color: red;
+}
+
+.itemName{
+    /* background-color: brown; */
+    width: 80%;
+}
+
+.item-btns{
+    /* background-color: greenyellow; */
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.check-remove{
+    height: 5%;
+    width: 33%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+.check-remove:hover{
+    background-color: rgb(119, 53, 226);
+    color: white;
+}
+
+.check-remove:hover span{
+    display: none;
+}
+
+.check-remove:hover::after{
+    content: "Remove All"
+}
